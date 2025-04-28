@@ -27,7 +27,9 @@ sixth_matrix = np.dot(third_matrix, fifth_matrix)
 print("\nSixth Matrix (Matrix Multiplication):\n", sixth_matrix)
 
 # 6. Sum of all elements in Matrix 3
-sum_third_matrix = np.sum(third_matrix)
+for i in range(2):
+    for j in range(2):
+        sixth_matrix[i][j] = third_matrix[i][j] * fifth_matrix[i][j]
 print("\nSum of all elements in Third Matrix:", sum_third_matrix)
 
 # 7. Zero Matrix
